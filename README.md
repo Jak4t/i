@@ -902,7 +902,7 @@ function library:CreateWindow(options, ...)
 		newTab.Name = removeSpaces((tabName and tostring(tabName):lower() or "???") .. "Tab")
 		newTab.Parent = tabsHolder
 		newTab.BackgroundTransparency = 1
-		newTab.LayoutOrder = (options.LastTab and 99999) or tonumber(options.TabOrder or options.LayoutOrder) or (2 + windowFunctions.tabCount)
+		newTab.LayoutOrder = (options.LastTab and 9999) or tonumber(options.TabOrder or options.LayoutOrder) or (2 + windowFunctions.tabCount)
 		local colored_newTab_TextColor3 = nil
 		if image then
 			newTab.Image = image
